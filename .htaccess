@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^www\.saharati\.co\.il [NC]
+RewriteRule ^(.*)$ http://saharati.co.il/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ([a-zA-Z]+) $1.php [L]
+
+ErrorDocument 404 /notfound

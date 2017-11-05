@@ -1,0 +1,87 @@
+/* RESET */
+html,body,main,#wrapper {height:100%}
+body {background-color:#000;font-family:Arial;color:#FFF}
+#wrapper {display:table;width:100%}
+header,main,footer {display:table-row}
+header,footer {height:1px}
+/* TITLE */
+h1 {max-width:700px;margin:20px auto 5px;padding:0 10px}
+/* MENU */
+nav {display:table;width:100%;max-width:1000px;margin:0 auto;text-align:center}
+nav div {display:table-cell}
+nav div a {display:inline-block;color:#CCC;padding:10px}
+nav div a:hover,nav div a.active {color:#FFA500;text-decoration:none}
+nav div a i.fa,nav div a strong,nav div a small {display:block;transition:all 300ms linear}
+nav div a i.fa {font-size:40px;margin-bottom:10px}
+nav div a strong {font-size:22px;text-transform:uppercase}
+nav div a small {font-size:15px}
+nav div a:hover i.fa {opacity:1;animation:moveFromTop 300ms ease-in-out}
+nav div a:hover strong {opacity:1;animation:moveFromLeft 300ms ease-in-out}
+nav div a:hover small {opacity:1;animation:moveFromRight 300ms ease-in-out}
+@keyframes moveFromTop
+{
+    from {opacity:0;transform:translateY(200%)}
+    to {opacity:1;transform:translateY(0%)}
+}
+@keyframes moveFromLeft
+{
+    from {opacity:0;transform:translateX(200%)}
+    to {opacity:1;transform:translateX(0%)}
+}
+@keyframes moveFromRight
+{
+    from {opacity:0;transform:translateX(-200%)}
+    to {opacity:1;transform:translateX(0%)}
+}
+@media all and (max-width:640px)
+{
+	nav div a {padding:7px}
+	nav div a i.fa {font-size:30px;margin-bottom:7px}
+	nav div a strong {font-size:15px}
+	nav div a small {font-size:10px}
+}
+@media all and (max-width:450px)
+{
+	nav div a i.fa {font-size:20px}
+	nav div a strong {font-size:10px}
+	nav div a small {font-size:5px}
+}
+/* CONTENT */
+#content-wrap {display:table-cell;position:relative}
+.content-wrap-inner {max-width:1000px;margin:0 auto;padding:8px}
+h2 {display:inline-block;font-size:2.1em;margin:7px 0 10px;border-bottom:1px dashed #FFA500}
+h3 {font-size:1.9em;margin:7px 0}
+summary {cursor:pointer;font-size:1.15em}
+a {color:aqua;text-decoration:none}
+a:hover {text-decoration:underline}
+p {line-height:1.25em;font-size:0.95em;margin:0 0 8px;color:#CCC}
+pre {white-space:pre-wrap;display:block;direction:ltr;font-size:0.95em;margin:8px 0}
+pre span {display:inline}
+img {display:block;width:100%;height:auto}
+table {font-size:0.95em;direction:ltr;width:100%;border:1px solid white;text-align:center}
+table th, table td {border:1px solid white}
+ol, ul {font-size:0.95em;color:#CCC}
+.purple {color:purple}
+.aqua {color:aqua}
+.yellow {color:yellow}
+.green {color:green}
+.rtl {direction:rtl}
+.rtl div {line-height:1.25em;font-size:0.95em;margin:0 0 8px;color:#CCC}
+.rtl span {display:block;direction:ltr;font-size:0.95em;margin:8px 0}
+.rtl pre span, .rtl span span {display:inline}
+/* MODAL */
+.imageModal img {transition:0.3s}
+.imageModal:hover img {opacity:0.8}
+#imageModal {text-align:center;display:none;position:fixed;top:0;left:0;z-index:2;width:100%;height:100%;background-color:rgba(0,0,0,0.3)}
+#imageModal img {display:inline;position:relative;width:auto;max-width:100%;max-height:100%;cursor:pointer;animation-name:zoom;animation-duration:0.6s}
+#imageModal a {position:absolute;top:15px;right:15px;font-size:40px;font-weight:bold;color:#F1F1F1;transition:0.3s;text-decoration:none}
+#imageModal a:hover {color:#BBB}
+@keyframes zoom
+{
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+/* FOOTER */
+footer {text-align:center}
+footer div {margin:10px 0}
+footer p {font-size:18px;margin:0;color:#777}
