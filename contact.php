@@ -1,6 +1,6 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
+//require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
 function sanitize($data)
 {
     if (is_array($data))
@@ -79,6 +79,7 @@ else
 <div class="content-wrap-inner">
 <h2>Contact Me</h2>
 <p>Feel free to use the form below to contact me in any matter.</p>
+<p>This page is still under development.</p>
 <form action="" method="post">
 <label>Name
 <input type="text" name="name" required value="<?php if (!$validation['result']) echo $_POST['name']; ?>">
