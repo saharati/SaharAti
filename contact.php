@@ -2,10 +2,14 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+<<<<<<< HEAD
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/SMTP.php';
+=======
+//require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
+>>>>>>> branch 'master' of https://github.com/saharati/SaharAti.git
 function sanitize($data)
 {
     if (is_array($data))
@@ -77,6 +81,7 @@ else
 <div class="content-wrap-inner">
 <h2>Contact Me</h2>
 <p>Feel free to use the form below to contact me in any matter.</p>
+<p>This page is still under development.</p>
 <form action="" method="post">
 <label>Name
 <input type="text" name="name" required value="<?php if (!$validation['result']) echo $_POST['name']; ?>">

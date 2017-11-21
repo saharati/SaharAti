@@ -69,6 +69,12 @@ ol, ul {font-size:0.95em;color:#CCC}
 .rtl div {line-height:1.25em;font-size:0.95em;margin:0 0 8px;color:#CCC}
 .rtl span {display:block;direction:ltr;font-size:0.95em;margin:8px 0}
 .rtl pre span, .rtl span span {display:inline}
+form {max-width:300px;margin:10px;font-size:0.95em;color:#CCC}
+input, textarea {display:block;width:100%;padding:5px;margin-bottom:5px;box-sizing:border-box}
+textarea {min-height:115px}
+input[type="submit"] {font-weight:bold;background-color:#FFB94B;text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;border-width:1px;border-style:solid;border-color:#D69E31 #E3A037 #D5982D #E3A037;cursor:pointer;color:#8F5A0A}
+input[type="submit"]:hover {background-color:#fddb6f}
+input[type="submit"]:active {outline:none;box-shadow:0 1px 4px rgba(0, 0, 0, 0.5) inset}
 /* MODAL */
 .imageModal img {transition:0.3s}
 .imageModal:hover img {opacity:0.8}
