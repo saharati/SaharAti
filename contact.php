@@ -6,7 +6,6 @@ require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/Exception.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/PHPMailer.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/SMTP.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
 function sanitize($data)
 {
     if (is_array($data))
