@@ -1,6 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/includes/details.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/SMTP.php';
 function sanitize($data)
 {
     if (is_array($data))
@@ -27,42 +32,35 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message']))
         $validation['messageempty'] = true;
     if (count(array_unique($validation)) === 1 && !current($validation))
     {
-        $mailtext = 'התקבלה הודעה חדשה מאתר סהר אטיאס, להלן פרטי ההודעה:
-שם השולח: ' . $_POST['name'] . '
-אימייל: ' . $_POST['email'] . '
-תוכן: ' . $_POST['message'];
-        
+        $message = 'Sender: ' . $_POST['name'] . '
+Email: ' . $_POST['email'] . '
+Message: ' . $_POST['message'];
         try
         {
-            global $mail_host, $mail_username, $mail_password;
-            require $_SERVER['DOCUMENT_ROOT'] . '/includes/mailer/PHPMailer.php';
             $mail = new PHPMailer(true);
             $mail->IsSMTP();
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
-            $mail->Host = $mail_host;
+            $mail->Host = $host;
             $mail->CharSet = 'UTF-8';
-            $mail->Username = $mail_username;
-            $mail->Password = $mail_password;
+            $mail->Username = $username;
+            $mail->Password = $password;
             $mail->SMTPOptions = array('ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true));
-            $mail->SetFrom('support@imutz.org', 'עמותת חבר לי');
-            $mail->ClearAddresses();
-            $mail->Subject = htmlspecialchars_decode($subject, ENT_QUOTES);
+            $mail->SetFrom('dev@saharati.co.il', 'Sahar Atias');
+            $mail->Subject = 'New message from saharati.co.il';
             $mail->Body = strip_tags($message);
-            $mail->AddReplyTo($from, htmlspecialchars_decode($fromName, ENT_QUOTES));
-            $mail->AddAddress($to, htmlspecialchars_decode($toName, ENT_QUOTES));
-            return $mail->Send();
+            $mail->AddReplyTo($_POST['email'], htmlspecialchars_decode($_POST['name'], ENT_QUOTES));
+            $mail->AddAddress('dev@saharati.co.il', 'Sahar Atias');
+            if ($mail->Send())
+                $validation['result'] = true;
+            else
+                $validation['mailproblem'] = true;
         }
         catch (exception $e)
         {
-            return false;
-        }
-        
-        if (sendMail($_POST['title'], $mailtext, $_POST['email'], $_POST['name'], $toEmail, $toName))
-            $validation['result'] = true;
-        else
             $validation['mailproblem'] = true;
+        }
     }
 }
 else
@@ -96,7 +94,26 @@ else
 </div>
 </div>
 </main>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+<?php
+require $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
+if (isset($_POST['submit']))
+{
+    echo '<script>';
+    if ($validation['result'])
+        echo 'alert("Your message was successfully sent ✔");';
+    else
+    {
+        echo 'alert("';
+        if ($validation['nameempty']) echo 'Please fill in your name.\n';
+        if ($validation['emailempty']) echo 'Please fill in your email address.\n';
+        elseif ($validation['emailwrong']) echo 'Your email address seems to be invalid.\n';
+        if ($validation['contentsempty']) echo 'Please enter your message.\n';
+        if ($validation['mailproblem']) echo 'An unknown error occurred, please try again later.';
+        echo '");';
+    }
+    echo '</script>';
+}
+?>
 </div>
 </body>
 </html>
