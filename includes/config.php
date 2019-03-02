@@ -12,35 +12,35 @@ function printHeader($page)
 <nav>
 <div>
 <a ' . ($page == 2 ? 'class="active" ' : '') . 'href="/java" title="Java for beginners">
-<i class="fa fa-code" aria-hidden="true"></i>
+<i class="fas fa-code"></i>
 <strong>Java</strong>
 <small>For beginners</small>
 </a>
 </div>
 <div>
 <a ' . ($page == 3 ? 'class="active" ' : '') . 'href="/logic" title="Our logic article">
-<i class="fa fa-random" aria-hidden="true"></i>
+<i class="fas fa-random"></i>
 <strong>Logic</strong>
 <small>Our article</small>
 </a>
 </div>
 <div>
 <a ' . ($page == 1 ? 'class="active" ' : '') . 'href="/" title="My projects">
-<i class="fa fa-book" aria-hidden="true"></i>
+<i class="fas fa-book"></i>
 <strong>Projects</strong>
 <small>Sahar in action</small>
 </a>
 </div>
 <div>
 <a ' . ($page == 4 ? 'class="active" ' : '') . 'href="/cv" title="My CV">
-<i class="fa fa-id-card" aria-hidden="true"></i>
+<i class="fas fa-id-card"></i>
 <strong>CV</strong>
 <small>About me</small>
 </a>
 </div>
 <div>
 <a ' . ($page == 5 ? 'class="active" ' : '') . 'href="/contact" title="Contact me">
-<i class="fa fa-envelope" aria-hidden="true"></i>
+<i class="fas fa-envelope"></i>
 <strong>Contact</strong>
 <small>Keep in touch</small>
 </a>

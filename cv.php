@@ -23,7 +23,7 @@
 <ul>
 <li>Full stack development.</li>
 <li>Code organization with SVN / GIT.</li>
-<li>MySQL, SQL Server and Access database integration.</li>
+<li>MySQL and SQL Server database integration.</li>
 <li>Software development at Hatzor military base – management of dining hall duties, management and invitation of Reservists and Contractors.</li>
 <li>Outlook signature creator – passed on to two more bases.</li>
 <li>Software for management of Ground Defenses guards duty – receiving a certificate of appreciation from a colonel.</li>
@@ -39,8 +39,8 @@
 <p><strong>2010 - today:</strong> Website development.</p>
 <ul>
 <li>Full stack development.</li>
-<li>Client: HTML, CSS, JS, Angular, JQuery, Bootstrap.</li>
-<li>Server: PHP, .NET Web API.</li>
+<li>Client: HTML, CSS, JS and JQuery.</li>
+<li>Server: PHP.</li>
 <li>Wide usage of SQL queries using MySQL database.</li>
 <li>Understanding and usage of APIs from big company such as: Microsoft, Google, Facebook.</li>
 <li>Setting up and managing of forums based on: phpBB, IPB, SMF, MyBB, IPS.</li>
@@ -79,7 +79,7 @@
 <li>בניית תוכנות בבסיס חצור - ניהול תורני חדר אוכל וניהול וזימון אנשי מילואים וקבלנים.</li>
 <li>תוכנה ליצירת חתימות ל-Outlook - עברה ל-2 בסיסים נוספים בחיל האוויר.</li>
 <li>תוכנה לניהול תורנויות הגנה קרקעית - קבלת תעודת הערכה בדרגת אלוף משנה.</li>
-<li>ממשוק התוכנות למסדי נתונים MySQL / SQL Server / Access.</li>
+<li>ממשוק התוכנות למסדי נתונים MySQL / SQL Server.</li>
 </ul>
 <p><strong>2012 - היום:</strong> ניהול שרתים מבוססים Linux.</p>
 <ul>
@@ -91,8 +91,8 @@
 </ul>
 <p><strong>2010 - היום:</strong> בניית אתרים.</p>
 <ul>
-<li>צד לקוח: HTML, CSS, JS, Angular, JQuery, Bootstrap.</li>
-<li>צד שרת: PHP, .NET Web API.</li>
+<li>צד לקוח: HTML, CSS, JS, JQuery.</li>
+<li>צד שרת: PHP.</li>
 <li>שימוש נרחב בשאילתות SQL ובמסד הנתונים MySQL.</li>
 <li>הבנה ושימוש ב-APIs של החברות הגדולות Facebook, Google, Microsoft.</li>
 <li>תפעול וניהול פורומים המבוססים על: MyBB, SMF, IPB, phpBB, IPS.</li>

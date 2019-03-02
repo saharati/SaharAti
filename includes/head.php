@@ -15,8 +15,8 @@
 <meta property="og:image:height" content="414">
 <meta property="og:url" content="http://saharati.co.il<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
 <link rel="canonical" href="http://saharati.co.il<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/default.css">
 <script src="/js/sahar.js"></script>
 </head>
