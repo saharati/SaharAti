@@ -45,8 +45,8 @@ At some point, I decided to create my own NGO, I had some ideas which could take
 One of the ideas was to use Facebook API to automatically scan NGOs pages for pets for adoption (using search with keywords) which then would be automatically added to the website.<br>
 This would save a lot of time for the NGOs because then they won't need to upload the same albums multiple times, its enough just uploading them to Facebook.<br>
 Evantually a massive database of pets for adoption was created in a single place, where people could find pets from all around the country with ease.<br>
-Pet Pal started at 2012 and was registered as a non-profit oragnization at 2015, but unfortunately by 2018 i'm officially going to end my work on Pet Pal and the NGO will close.<br>
-Pet Pal went through many edits and redesigns over time, we did much more than just advertising pets for adoption at some point, aswell as an English version of the website was added, using the Bing Translate API.
+Pet Pal started at 2012 and was registered as a non-profit oragnization at 2015, but unfortunately by 2018 i've decided to officially end my work on Pet Pal and the NGO closed.<br>
+Pet Pal went through many edits and redesigns over time, it did much more than just advertising pets for adoption at some point, aswell as an English version of the website was added, using the Bing Translate API.
 </p>
 <a class="imageModal" href="/images/projects/petpal.jpg" title="Click to enlarge" data-width="1935" data-height="1734"><img src="/images/projects/petpal.jpg" title="Click to enlarge" alt="Click to enlarge"></a>
 <h2>GameOne</h2>
