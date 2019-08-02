@@ -31,7 +31,7 @@ Aswell as giving attack power to the accusers, again, depending on all the detai
 More factors come in play such as if the accusers know each other, if there's more than one accuser, if the accusations are similar and so on.<br>
 Evantually the system becomes one big survival game where each player has power/life and we use that to predict the outcome, or even know how much more power is need to take a certain target down.<br>
 To make it clear, we decided to use a live example - <a href="/katsav" title="The case of Moshe Katsav" target="_blank">the case of Moshe Katsav</a>.<br>
-Aswell as a <a href="/Logic.jar" title="Java application">java application</a> that can be used to do the calculations.<br>
+Aswell as a <a href="/downloads/Logic.jar" title="Java application">java application</a> that can be used to do the calculations.<br>
 The source code can be found <a href="https://github.com/saharati/Logic" title="Source code" target="_blank" rel="nofollow">here</a>.
 </p>
 <p>

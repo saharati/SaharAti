@@ -81,8 +81,8 @@ In addition to the lectures I gave at <a href="/logic" title="Lectures">Luxembou
 I've decided to go for Software Engineering seminar and do something quite different than what most students do.<br>
 Instead of reading an article and making a lecture about it, i've decided to lecture about Continuous Integration (using a tool called CircleCI).<br>
 The reason i've decided to do it is because i've been working with a team who used it and saw how important it is.<br>
-My presentation on the subject can be found <a href="/ContinuousIntegration.pptx" title="Continuous Integration">here</a>.<br>
-My second lecture during the seminar however, was on an article called IteRace, which can also be found <a href="IteRace.pptx" title="IteRace">here</a>.
+My presentation on the subject can be downloaded <a href="/downloads/ContinuousIntegration.pptx" title="Continuous Integration">here</a>.<br>
+My second lecture during the seminar however, was on an article called IteRace, which can also be downloaded <a href="/downloads/IteRace.pptx" title="IteRace">here</a>.
 </p>
 </div>
 </div>
