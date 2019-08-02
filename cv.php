@@ -19,32 +19,25 @@
 <h3>Work Experience</h3>
 <p><strong>2012 - today:</strong> Java programming.</p>
 <ul>
-<li>Backend private game server development.</li>
+<li>Backend server development.</li>
+<li>Application development at IAF, received certification of appreciation.</li>
 <li>Code organization with SVN / GIT.</li>
 <li>MySQL database integration.</li>
-<li>Experiencing with CentOS.</li>
-<li>Setting up the server to work as LAMP.</li>
-<li>Coping with cyber events using IPTables and CSF.</li>
-<li>Working with software such as PHPMyAdmin and VestaCP.</li>
-<li>Taking care of specific and systemic malfunctions.</li>
-<li>Software development at Hatzor military base:
-<ol>
-<li>Management of dining hall duties.</li>
-<li>Management and invitation of Reservists and Contractors.</li>
-<li>Outlook signature creator – passed on to two more bases.</li>
-<li>Management of Ground Defense guards' duties – receiving a certificate of appreciation from a colonel.</li>
-</ol>
-</li>
+<li>Experiencing with Linux.</li>
+<li>Experience with LAMP environment.</li>
+<li>Cyber security knowledge.</li>
+<li>Making own QA to deal with specific and systemic malfunctions.</li>
 </ul>
 <p><strong>2010 - today:</strong> Website development.</p>
 <ul>
 <li>Full stack development.</li>
 <li>Client: HTML5, CSS3, JS/JQuery.</li>
 <li>Server: PHP.</li>
-<li>Wide usage of SQL queries using MySQL database.</li>
-<li>Took a course on AngularJS / Bootstrap / .NET Rest API / NodeJS.</li>
-<li>Usage of APIs from big company such as Google, Facebook, Twitch and Paypal.</li>
-<li>Setting up and managing forums based on phpBB, IPB, SMF, MyBB and IPS.</li>
+<li>Experienced with AngularJS / Bootstrap / .NET Rest API / NodeJS.</li>
+<li>Experience as DBA using MySQL.</li>
+<li>API Implementation experience of Google, Facebook, Twitch and Paypal.</li>
+<li>Working with JSON and XML files.</li>
+<li>Experience with forum and site management applications.</li>
 </ul>
 <h3>Military</h3>
 <p><strong>7.2013 - 7.2016:</strong> Network technician at the air force and discharge as First Sergeant.</p>
@@ -54,7 +47,6 @@
 <li>Working with command and control stations and operation of Active Directory.</li>
 <li>Punctuality to ensure continuous functioning of the squadrons.</li>
 <li>Working with transmission and networking equipment such as routers and switches.</li>
-<li>Participation in "Juniper Cobra" with the Americans and in the "Protective Edge" operation.</li>
 <li>Appointment as networking team leader.</li>
 </ul>
 <h3>Volunteering</h3>
