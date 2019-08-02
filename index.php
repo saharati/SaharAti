@@ -70,11 +70,20 @@ Unfortunately the projects are classified, so there's not much details or images
 </p>
 <h2>Private Game Server</h2>
 <p>
-Last but not least, I liked MMO games, and when I heard one of the games I was playing was developed under open-source format, I didn't hesitate to check it out, I took part in 3 teams (aCis, L2jServer and L2jUnity) where I mainly helped fixing and testing bugs.<br>
+I liked MMO games, and when I heard one of the games I was playing was developed under open-source format, I didn't hesitate to check it out, I took part in 3 teams (aCis, L2jServer and L2jUnity) where I mainly helped fixing and testing bugs.<br>
 Later I started my own gameserver that gave me a major boost in java knowledge, Linux server management and other amazing tools.<br>
-I created a whole new game out of an existing one, about 100,000 lines of code that were written solely by me up to today since 2011.<br>
+I created a whole new game out of an existing one, about 100,000 lines of code that were written solely by me up to today since 2011.
 </p>
 <a class="imageModal" href="/images/projects/game.jpg" title="Click to enlarge" data-width="3147" data-height="1134"><img src="/images/projects/game.jpg" title="Click to enlarge" alt="Click to enlarge"></a>
+<h2>Lectures</h2>
+<p>
+In addition to the lectures I gave at <a href="/logic" title="Lectures">Luxembourg and Isralog</a> i've also given 2 lectures at a seminar during my studies.<br>
+I've decided to go for Software Engineering seminar and do something quite different than what most students do.<br>
+Instead of reading an article and making a lecture about it, i've decided to lecture about Continuous Integration (using a tool called CircleCI).<br>
+The reason i've decided to do it is because i've been working with a team who used it and saw how important it is.<br>
+My presentation on the subject can be found <a href="/ContinuousIntegration.pptx" title="Continuous Integration">here</a>.<br>
+My second lecture during the seminar however, was on an article called IteRace, which can also be found <a href="IteRace.pptx" title="IteRace">here</a>.
+</p>
 </div>
 </div>
 </main>
