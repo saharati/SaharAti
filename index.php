@@ -59,6 +59,25 @@ So I decided to create a project called GameOne, a platform which will serve all
 The source code can be found on <a href="https://github.com/saharati/GameOne" title="GameOne on Github" target="_blank" rel="nofollow">Github</a>, there are still a few games missing since I like to rework them before adding them on the platform.
 </p>
 <a class="imageModal" href="/images/projects/gameone.jpg" title="Click to enlarge" data-width="1832" data-height="1627"><img src="/images/projects/gameone.jpg" title="Click to enlarge" alt="Click to enlarge"></a>
+<h2>AI</h2>
+<p>
+During my AI course I decided that I take every problem we learn and try to solve it myself using various of different algorithms.<br>
+At first it was a simple console application that simply printed the path to the solution for each algorithm, later on I improved it with a GUI.<br>
+I've handled the project over to my lecturer for use in future years, I believe a visual demonstration is always good for better understanding.<br>
+The final project was building a Neural Network for a Paper-Rock-Scissors game, to check if we can teach the PC to predict the user's next step.<br>
+The list of included problems are:
+</p>
+<ul>
+<li><strong>The Three Missionaries</strong> - transfer 3 humans from one island to another, while there can never be more zombies than humans in either islands, the boat can carry up to 2 objects at a time.</li>
+<li><strong>Puzzle</strong> - sort the puzzle from 1 to 8 while you are able to move only the zero tile, and only up/down/left/right directions (no diagonals).</li>
+<li><strong>The Horse Problem</strong> - fill the whole chess board with only knight moves, without going on the same tile twice.</li>
+<li><strong>8 Queens</strong> - place 8 queens on a chess board while making sure that no queen threatens any other queen.</li>
+<li><strong>The Jugs Problem</strong> - starts with a pool and 2 jugs with capacities of 3 and 5 liters, you must fill up exactly 4 liters by filling / spilling water between the jugs and the pool.</li>
+</ul>
+<p>
+The source code can be found on <a href="https://github.com/saharati/AI" title="AI on Github" target="_blank" rel="nofollow">Github</a>.
+</p>
+<a class="imageModal" href="/images/projects/ai.jpg" title="Click to enlarge" data-width="2095" data-height="1404"><img src="/images/projects/ai.jpg" title="Click to enlarge" alt="Click to enlarge"></a>
 <h2>Military</h2>
 <p>
 In my military service I was appointed as a network technician, I personally think that development and network always go hand to hand.<br>
