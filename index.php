@@ -37,6 +37,7 @@ They had a website, but apperantly the one who was in charge of it left the NGO 
 So I redesigned the website for them and hosted it on my VPS for them for free.<br>
 Recently it was also upgraded, using the most recent technologies out there (mobile support, HTML5, CSS3 etc).<br>
 A live version of the website can be found <a href="http://imutz.org" title="Haver Li NGO" target="_blank" rel="nofollow">here</a>.
+Source code can be found on <a href="https://github.com/saharati/HaverLi" title="HaverLi on Github" target="_blank" rel="nofollow">Github</a>.
 </p>
 <a class="imageModal" href="/images/projects/haverli.jpg" title="Click to enlarge" data-width="2050" data-height="1322"><img src="/images/projects/haverli.jpg" title="Click to enlarge" alt="Click to enlarge"></a>
 <h2>Pet Pal</h2>
