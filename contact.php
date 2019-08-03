@@ -97,9 +97,7 @@ else
 <textarea required name="message"><?php if (!$validation['result']) echo $_POST['message']; ?></textarea>
 </label>
 <div class="g-recaptcha" data-sitekey="6LdyIbEUAAAAAG8MLV9087tQE-JIhpWtRqd9hJRo"></div>
-<label>
 <input type="submit" name="submit" value="Send">
-</label>
 </form>
 </div>
 </div>
@@ -127,6 +125,6 @@ if (isset($_POST['submit']))
 }
 ?>
 </div>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
 </body>
 </html>
