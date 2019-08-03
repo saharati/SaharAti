@@ -39,6 +39,7 @@
 <li>Working with JSON and XML files.</li>
 <li>Experience with forum and site management applications.</li>
 </ul>
+<p><strong>2019:</strong> C# developer at LSports.</p>
 <h3>Military</h3>
 <p><strong>7.2013 - 7.2016:</strong> Network technician at the air force and discharge as First Sergeant.</p>
 <ul>
