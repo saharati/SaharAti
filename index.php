@@ -8,7 +8,7 @@
 <main>
 <div id="content-wrap">
 <div class="content-wrap-inner">
-<h2>My First Project</h2>
+<h2>My First Project - 2011</h2>
 <p>
 The way I got into computer science was special, at school I choose computer science but was about to quit due to bad marks.<br>
 It was so different from what I imagined and it took me time to understand what's going on, because everything was done on paper.<br>
