@@ -18,8 +18,8 @@ function sanitize($data)
         $data = htmlspecialchars(trim(htmlspecialchars_decode($data, ENT_QUOTES)), ENT_QUOTES);
     return $data;
 }
-$validation = array('nameempty' => false, 'emailempty' => false, 'messageempty' => false, 'emailwrong' => false, 'mailproblem' => false, 'result' => false);
-if (isset($_POST['name'], $_POST['email'], $_POST['message']))
+$validation = array('nameempty' => false, 'emailempty' => false, 'messageempty' => false, 'captchaempty' => false, 'emailwrong' => false, 'mailproblem' => false, 'captchawrong' => false, 'result' => false);
+if (isset($_POST['name'], $_POST['email'], $_POST['message'], $_POST['g-recaptcha-response']))
 {
     $_POST = sanitize($_POST);
     if (empty($_POST['name']))
@@ -30,6 +30,15 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message']))
         $validation['emailwrong'] = true;
     if (empty($_POST['message']))
         $validation['messageempty'] = true;
+    if (empty($_POST['g-recaptcha-response']))
+        $validation['captchaempty'] = true;
+    else
+    {
+        $response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $_POST['g-recaptcha-response'] . '&remoteip=' . $_SERVER['REMOTE_ADDR']);
+        $responseKeys = json_decode($response, true);
+        if (!$responseKeys["success"])
+            $validation['captchawrong'] = true;
+    }
     if (count(array_unique($validation)) === 1 && !current($validation))
     {
         $message = 'Sender: ' . $_POST['name'] . '
@@ -87,6 +96,7 @@ else
 <label>Message
 <textarea required name="message"><?php if (!$validation['result']) echo $_POST['message']; ?></textarea>
 </label>
+<div class="g-recaptcha" data-sitekey="6LdyIbEUAAAAAG8MLV9087tQE-JIhpWtRqd9hJRo"></div>
 <label>
 <input type="submit" name="submit" value="Send">
 </label>
@@ -107,7 +117,9 @@ if (isset($_POST['submit']))
         if ($validation['nameempty']) echo 'Please fill in your name.\n';
         if ($validation['emailempty']) echo 'Please fill in your email address.\n';
         elseif ($validation['emailwrong']) echo 'Your email address seems to be invalid.\n';
-        if ($validation['contentsempty']) echo 'Please enter your message.\n';
+        if ($validation['messageempty']) echo 'Please enter your message.\n';
+        if ($validation['captchaempty']) echo 'Please complete the captcha.\n';
+        elseif ($validation['captchawrong']) echo 'The captcha you entered was invalid.\n';
         if ($validation['mailproblem']) echo 'An unknown error occurred, please try again later.';
         echo '");';
     }
@@ -115,5 +127,6 @@ if (isset($_POST['submit']))
 }
 ?>
 </div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
